@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fondo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backColor"
+    android:backgroundTint="@color/backColor">
+
+    <TextView
+        android:id="@+id/ae"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="50dp"
+        android:paddingTop="40dp"
+        android:text="Opciones"
+        android:textAlignment="center"
+        android:textColor="@color/DarkBlue"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/aa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="50dp"
+        android:paddingTop="40dp"
+        android:text="Administrador"
+        android:textAlignment="center"
+        android:textColor="@color/DarkBlue"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/reportar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/DarkBlue"
+        android:padding="10dp"
+        android:paddingLeft="26dp"
+        android:paddingRight="26dp"
+        android:rotationX="0"
+        android:text="Reportar Usuario"
+        android:textColor="@color/backColor"
+        app:iconPadding="8dp"
+        app:iconTint="@color/backColor"
+        tools:layout_editor_absoluteX="99dp"
+        tools:layout_editor_absoluteY="146dp" />
+
+    <Button
+        android:id="@+id/elim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/DarkBlue"
+        android:padding="10dp"
+        android:paddingLeft="26dp"
+        android:paddingRight="26dp"
+        android:rotationX="0"
+        android:text="Eliminar Publicación"
+        android:textColor="@color/backColor"
+        app:iconPadding="8dp"
+        app:iconTint="@color/backColor"
+        tools:layout_editor_absoluteX="99dp"
+        tools:layout_editor_absoluteY="217dp" />
+
+    <Button
+        android:id="@+id/nuevas"
+        android:layout_width="270dp"
+        android:layout_height="63dp"
+        android:backgroundTint="@color/DarkBlue"
+        android:padding="10dp"
+        android:paddingLeft="3dp"
+        android:paddingRight="6dp"
+        android:rotationX="0"
+        android:text="establecer nuevas politicas y reglas"
+        android:textColor="@color/backColor"
+        app:iconPadding="24dp"
+        app:iconTint="@color/backColor"
+        tools:layout_editor_absoluteX="99dp"
+        tools:layout_editor_absoluteY="284dp" />
+
+    <Button
+        android:id="@+id/cerrar_sesion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/DarkBlue"
+        android:padding="10dp"
+        android:paddingLeft="26dp"
+        android:paddingRight="26dp"
+        android:rotationX="0"
+        android:text="Cerrar Sesión"
+        android:textColor="@color/backColor"
+        app:iconPadding="8dp"
+        app:iconTint="@color/backColor"
+        tools:layout_editor_absoluteX="135dp"
+        tools:layout_editor_absoluteY="664dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/backColor"
+        app:srcCompat="@drawable/camara"
+        app:tint="@color/DarkBlue"
+        tools:layout_editor_absoluteX="41dp"
+        tools:layout_editor_absoluteY="217dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/backColor"
+        app:srcCompat="@drawable/contacto"
+        app:tint="@color/DarkBlue"
+        tools:layout_editor_absoluteX="41dp"
+        tools:layout_editor_absoluteY="148dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/backColor"
+        app:srcCompat="@drawable/libro"
+        app:tint="@color/DarkBlue"
+        tools:layout_editor_absoluteX="41dp"
+        tools:layout_editor_absoluteY="284dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
