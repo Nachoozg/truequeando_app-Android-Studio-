@@ -36,8 +36,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="50dp"
                 android:layout_marginEnd="50dp"
-                android:paddingTop="40dp"
-                android:text="¡Bienvenido de nuevo!"
+                android:paddingTop="24dp"
+                android:text="Administrador"
                 android:textAlignment="center"
                 android:textColor="@color/black"
                 android:textSize="24sp"
@@ -49,19 +49,22 @@
                 android:id="@+id/x1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="250dp"
+                android:layout_marginBottom="320dp"
                 android:backgroundTint="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@android:drawable/ic_menu_close_clear_cancel"
-                tools:layout_editor_absoluteX="240dp" />
+                app:srcCompat="@android:drawable/ic_menu_close_clear_cancel" />
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                tools:layout_editor_absoluteX="0dp"
-                tools:layout_editor_absoluteY="-136dp">
+                android:layout_height="match_parent">
+
 
                 <Space
-                    android:id="@+id/space"
+                    android:id="@+id/space2"
                     android:layout_width="match_parent"
                     android:layout_height="45dp" />
 
@@ -69,24 +72,40 @@
                     android:id="@+id/correo"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="36dp"
+                    android:layout_marginTop="58dp"
+                    android:layout_marginEnd="36dp"
+                    android:layout_marginBottom="17dp"
                     android:backgroundTint="@color/DarkBlue"
                     android:ems="10"
                     android:inputType="textPersonName"
-                    android:text="Dirección de correo"
+                    android:text="Código de usuario"
                     android:textColor="@color/DarkBlue"
                     android:textCursorDrawable="@color/DarkBlue"
-                    tools:layout_editor_absoluteX="36dp"
-                    tools:layout_editor_absoluteY="106dp" />
+                    app:layout_constraintBottom_toTopOf="@+id/ojo"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/space2" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
 
                 <ImageButton
                     android:id="@+id/ojo"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="120dp"
+                    android:layout_marginBottom="26dp"
                     android:backgroundTint="@color/white"
                     android:tint="@color/DarkBlue"
-                    app:srcCompat="@android:drawable/ic_menu_view"
-                    tools:layout_editor_absoluteX="197dp"
-                    tools:layout_editor_absoluteY="165dp" />
+                    app:layout_constraintBottom_toTopOf="@+id/checkedTextView"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.871"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/space2"
+                    app:layout_constraintVertical_bias="1.0"
+                    app:srcCompat="@android:drawable/ic_menu_view" />
 
                 <EditText
                     android:id="@+id/contraseña"
@@ -99,21 +118,37 @@
                     android:text="Contraseña"
                     android:textColor="@color/DarkBlue"
                     android:textColorHint="@color/DarkBlue"
-                    tools:layout_editor_absoluteX="36dp"
-                    tools:layout_editor_absoluteY="171dp" />
+                    app:layout_constraintBottom_toTopOf="@+id/para_r"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/correo"
+                    app:layout_constraintVertical_bias="0.338" />
 
                 <Space
                     android:layout_width="match_parent"
-                    android:layout_height="23dp" />
+                    android:layout_height="15dp" />
 
                 <CheckedTextView
                     android:id="@+id/checkedTextView"
-                    android:layout_width="238dp"
+                    android:layout_width="258dp"
                     android:layout_height="wrap_content"
-                    android:text="¿Contraseña Olvidada?"
+                    android:checkMarkTint="@color/DarkGrey"
+                    android:text="Contactar con Departamento"
+                    android:textAlignment="textStart"
                     android:textColor="@color/DarkBlue"
-                    tools:layout_editor_absoluteX="72dp"
-                    tools:layout_editor_absoluteY="254dp" />
+                    tools:layout_editor_absoluteX="48dp"
+                    tools:layout_editor_absoluteY="242dp" />
+
+                <CheckedTextView
+                    android:id="@+id/para_r"
+                    android:layout_width="258dp"
+                    android:layout_height="wrap_content"
+                    android:checkMarkTint="@color/DarkGrey"
+                    android:text="para reestablecer contraseña"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/DarkBlue"
+                    tools:layout_editor_absoluteX="48dp"
+                    tools:layout_editor_absoluteY="261dp" />
 
                 <Button
                     android:id="@+id/boton_iniciarSesion"
@@ -131,7 +166,8 @@
                     app:iconTint="@color/backColor"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent" />
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/para_r" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
