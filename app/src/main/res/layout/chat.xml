@@ -8,19 +8,8 @@
     android:background="@color/backColor"
     android:backgroundTint="@color/backColor">
 
-    <ImageView
-        android:id="@+id/TLogo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.223"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/t" />
-
     <TextView
-        android:id="@+id/Chas"
+        android:id="@+id/chats"
         android:layout_width="137dp"
         android:layout_height="59dp"
         android:text="Cha   s"
@@ -28,13 +17,24 @@
         android:textSize="40sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.058"
+        app:layout_constraintHorizontal_bias="0.091"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.023" />
+        app:layout_constraintVertical_bias="0.035" />
+
+    <ImageView
+        android:id="@+id/TLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.246"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/t" />
 
     <TextView
-        android:id="@+id/Titulo"
+        android:id="@+id/titulo"
         android:layout_width="266dp"
         android:layout_height="22dp"
         android:text="Zapatillas de running marc..."
@@ -46,10 +46,10 @@
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.143" />
+        app:layout_constraintVertical_bias="0.174" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/mensajeVP"
         android:layout_width="261dp"
         android:layout_height="20dp"
         android:text="Si!, como quieres realizar..."
@@ -57,8 +57,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.48"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Titulo"
-        app:layout_constraintVertical_bias="0.001" />
+        app:layout_constraintTop_toBottomOf="@+id/titulo"
+        app:layout_constraintVertical_bias="0.003" />
 
     <View
         android:id="@+id/divider"
@@ -72,12 +72,12 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:layout_constraintVertical_bias="0.029"
+        app:layout_constraintTop_toBottomOf="@+id/mensajeVP"
+        app:layout_constraintVertical_bias="0.023"
         tools:visibility="visible" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/noChats"
         android:layout_width="317dp"
         android:layout_height="121dp"
         android:layout_marginTop="8dp"
@@ -89,7 +89,73 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/divider"
-        app:layout_constraintVertical_bias="0.041" />
+        app:layout_constraintVertical_bias="0.098" />
+
+    <ImageView
+        android:id="@+id/perfil"
+        android:layout_width="51dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chats"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/perfil" />
+
+    <ImageView
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/perfil"
+        app:layout_constraintEnd_toEndOf="@+id/perfil"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/perfil"
+        app:layout_constraintTop_toTopOf="@+id/perfil"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@android:drawable/presence_online" />
+
+    <ImageView
+        android:id="@+id/saveButton"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/homeButton"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider3"
+        app:srcCompat="@drawable/guardar" />
+
+    <ImageView
+        android:id="@+id/homeButton"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="92dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/chatButton"
+        app:layout_constraintTop_toTopOf="@+id/divider3"
+        app:srcCompat="@drawable/home" />
+
+    <ImageView
+        android:id="@+id/chatButton"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="44dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider3"
+        app:srcCompat="@drawable/chat" />
+
+    <View
+        android:id="@+id/divider3"
+        android:layout_width="409dp"
+        android:layout_height="0.5dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/noChats"
+        app:layout_constraintVertical_bias="0.807"
+        tools:layout_editor_absoluteX="1dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
