@@ -9,5 +9,7 @@
     <color name="white">#FFFFFFFF</color>
     <color name="backColor">#E0EDFF</color>
     <color name="DarkBlue">#2D6F90</color>
+    <color name="lavender">#8692f7</color>
+
 
 </resources>
