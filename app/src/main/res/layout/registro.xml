@@ -10,8 +10,8 @@
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView2"
-        android:layout_width="282dp"
-        android:layout_height="361dp"
+        android:layout_width="298dp"
+        android:layout_height="528dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
@@ -22,9 +22,10 @@
         app:cardCornerRadius="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.497">
 
         <TextView
             android:id="@+id/texto_Login"
@@ -32,7 +33,7 @@
             android:layout_height="wrap_content"
             android:paddingLeft="26dp"
             android:paddingTop="40dp"
-            android:text="¡Bienvenido de nuevo!"
+            android:text="Únete a truequeando"
             android:textAlignment="center"
             android:textColor="@color/black"
             android:textSize="24sp" />
@@ -52,20 +53,28 @@
                 android:layout_height="45dp" />
 
             <EditText
+                android:id="@+id/nombre_apellidos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:backgroundTint="@color/DarkBlue"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Nombre y Apellidos"
+                android:textColor="@color/DarkBlue"
+                android:textCursorDrawable="@color/DarkBlue" />
+
+            <EditText
                 android:id="@+id/correo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="24dp"
+
                 android:backgroundTint="@color/DarkBlue"
                 android:ems="10"
                 android:inputType="textPersonName"
                 android:text="Dirección de correo"
                 android:textColor="@color/DarkBlue"
                 android:textCursorDrawable="@color/DarkBlue" />
-
-            <Space
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
 
             <EditText
                 android:id="@+id/contraseña"
@@ -79,9 +88,41 @@
                 android:textColor="@color/DarkBlue"
                 android:textColorHint="@color/DarkBlue" />
 
-            <Space
+            <EditText
+                android:id="@+id/conf_contraseña"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/DarkBlue"
+                android:drawableTint="#191818"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Confirmar contraseña"
+                android:textColor="@color/DarkBlue"
+                android:textColorHint="@color/DarkBlue" />
+
+            <EditText
+                android:id="@+id/fecha_nac"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:backgroundTint="@color/DarkBlue"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Fecha de nacimiento"
+                android:textColor="@color/DarkBlue"
+                android:textCursorDrawable="@color/DarkBlue" />
+
+            <CheckBox
+                android:id="@+id/checkBox"
                 android:layout_width="match_parent"
-                android:layout_height="52dp" />
+                android:layout_height="wrap_content"
+                android:text="Aceptar Términos y Condiciones" />
+
+            <CheckBox
+                android:id="@+id/checkBox2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Acepto recibir promociones via e-mail" />
 
             <Button
                 android:id="@+id/boton_iniciarSesion"
@@ -92,7 +133,7 @@
                 android:paddingLeft="26dp"
                 android:paddingRight="26dp"
                 android:rotationX="0"
-                android:text="Iniciar Sesión"
+                android:text="Crear cuenta"
                 android:textColor="@color/backColor"
                 app:iconPadding="8dp"
                 app:iconTint="@color/backColor" />
