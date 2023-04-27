@@ -60,11 +60,6 @@
                 tools:layout_editor_absoluteX="0dp"
                 tools:layout_editor_absoluteY="-136dp">
 
-                <Space
-                    android:id="@+id/space"
-                    android:layout_width="match_parent"
-                    android:layout_height="45dp" />
-
                 <EditText
                     android:id="@+id/correo"
                     android:layout_width="wrap_content"
@@ -101,10 +96,6 @@
                     android:textColorHint="@color/DarkBlue"
                     tools:layout_editor_absoluteX="36dp"
                     tools:layout_editor_absoluteY="171dp" />
-
-                <Space
-                    android:layout_width="match_parent"
-                    android:layout_height="23dp" />
 
                 <CheckedTextView
                     android:id="@+id/checkedTextView"
