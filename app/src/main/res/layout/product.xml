@@ -45,7 +45,7 @@
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.592"
+        app:layout_constraintHorizontal_bias="0.615"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/precio"
         app:layout_constraintVertical_bias="0.0" />
@@ -57,7 +57,6 @@
         android:layout_marginStart="16dp"
         android:backgroundTint="@color/backColor"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/textView3"
         app:layout_constraintHorizontal_bias="0.421"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tituloproducto"
@@ -74,17 +73,6 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/perfilvendedor"
         app:srcCompat="@drawable/stats" />
-
-    <ImageButton
-        android:id="@+id/abrirchat"
-        android:layout_width="47dp"
-        android:layout_height="44dp"
-        android:backgroundTint="@color/backColor"
-        app:layout_constraintBottom_toTopOf="@+id/botoncomprar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/nombrevendedora"
-        app:layout_constraintTop_toBottomOf="@+id/tituloproducto"
-        app:srcCompat="@drawable/abrirChat" />
 
     <TextView
         android:id="@+id/nombrevendedora"
@@ -125,12 +113,56 @@
 
     <ImageButton
         android:id="@+id/flechaAtras"
-        android:layout_width="49dp"
-        android:layout_height="46dp"
+        android:layout_width="54dp"
+        android:layout_height="49dp"
         android:backgroundTint="#00FFFFFF"
-        android:tint="#FFFFFF"
         app:srcCompat="?attr/homeAsUpIndicator"
+        app:tint="#FFFFFF"
+        tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="-1dp"
         tools:layout_editor_absoluteY="0dp" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="45dp"
+        android:layout_height="40dp"
+        app:srcCompat="@drawable/trespuntosproducto"
+        tools:layout_editor_absoluteX="350dp"
+        tools:layout_editor_absoluteY="325dp"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/imageButton12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/backColor"
+        app:layout_constraintBottom_toTopOf="@+id/botoncomprar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.716"
+        app:layout_constraintStart_toEndOf="@+id/estrellas"
+        app:layout_constraintTop_toBottomOf="@+id/tituloproducto"
+        app:layout_constraintVertical_bias="0.426"
+        app:srcCompat="@drawable/abrirchat" />
+
+    <View
+        android:id="@+id/divider5"
+        android:layout_width="375dp"
+        android:layout_height="2dp"
+        android:background="@color/DarkBlue"
+        app:layout_constraintBottom_toTopOf="@+id/nombrevendedora"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tituloproducto" />
+
+    <View
+        android:id="@+id/divider6"
+        android:layout_width="375dp"
+        android:layout_height="2dp"
+        android:background="@color/DarkBlue"
+        app:layout_constraintBottom_toTopOf="@+id/botoncomprar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stats"
+        app:layout_constraintVertical_bias="0.297" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
