@@ -8,16 +8,16 @@
     android:backgroundTint="@color/backColor">
 
     <ImageButton
-        android:id="@+id/imageButton28"
+        android:id="@+id/botonperfil"
         android:layout_width="71dp"
         android:layout_height="68dp"
         android:backgroundTint="@color/backColor"
-        app:layout_constraintBottom_toTopOf="@+id/divider7"
-        app:layout_constraintEnd_toStartOf="@+id/textView4"
-        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.061"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.728"
+        app:layout_constraintVertical_bias="0.078"
         app:srcCompat="@drawable/perfil" />
 
     <TextView
@@ -31,7 +31,7 @@
         app:layout_constraintBottom_toTopOf="@+id/divider7"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.577" />
+        app:layout_constraintVertical_bias="0.613" />
 
     <TextView
         android:id="@+id/textView27"
@@ -41,7 +41,7 @@
         app:layout_constraintBottom_toTopOf="@+id/divider7"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.014"
-        app:layout_constraintStart_toEndOf="@+id/imageButton28"
+        app:layout_constraintStart_toEndOf="@+id/botonperfil"
         app:layout_constraintTop_toBottomOf="@+id/textView4"
         app:layout_constraintVertical_bias="0.0" />
 
@@ -81,7 +81,6 @@
         app:srcCompat="@drawable/mensaje2" />
 
     <ImageButton
-        android:id="@+id/imageButton29"
         android:layout_width="45dp"
         android:layout_height="44dp"
         android:background="@color/backColor"
@@ -105,5 +104,32 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.219" />
+
+    <EditText
+        android:id="@+id/barraMensaje"
+        android:layout_width="313dp"
+        android:layout_height="43dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Introduce un Mensaje"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton30"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.973" />
+
+    <ImageButton
+        android:id="@+id/imageButton30"
+        android:layout_width="47dp"
+        android:layout_height="41dp"
+        android:backgroundTint="@color/backColor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.956"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.971"
+        app:srcCompat="@drawable/avion" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
