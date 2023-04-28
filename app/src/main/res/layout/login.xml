@@ -45,15 +45,6 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
-            <ImageButton
-                android:id="@+id/x1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:backgroundTint="@color/white"
-                app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@android:drawable/ic_menu_close_clear_cancel"
-                tools:layout_editor_absoluteX="240dp" />
-
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -70,18 +61,25 @@
                     android:text="Dirección de correo"
                     android:textColor="@color/DarkBlue"
                     android:textCursorDrawable="@color/DarkBlue"
-                    tools:layout_editor_absoluteX="36dp"
-                    tools:layout_editor_absoluteY="106dp" />
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.322" />
 
                 <ImageButton
                     android:id="@+id/ojo"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:backgroundTint="@color/white"
-                    android:tint="@color/DarkBlue"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.88"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.532"
                     app:srcCompat="@android:drawable/ic_menu_view"
-                    tools:layout_editor_absoluteX="197dp"
-                    tools:layout_editor_absoluteY="165dp" />
+                    app:tint="@color/DarkBlue" />
 
                 <EditText
                     android:id="@+id/contraseña"
@@ -94,8 +92,11 @@
                     android:text="Contraseña"
                     android:textColor="@color/DarkBlue"
                     android:textColorHint="@color/DarkBlue"
-                    tools:layout_editor_absoluteX="36dp"
-                    tools:layout_editor_absoluteY="171dp" />
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/correo"
+                    app:layout_constraintVertical_bias="0.142" />
 
                 <CheckedTextView
                     android:id="@+id/checkedTextView"
@@ -103,8 +104,12 @@
                     android:layout_height="wrap_content"
                     android:text="¿Contraseña Olvidada?"
                     android:textColor="@color/DarkBlue"
-                    tools:layout_editor_absoluteX="72dp"
-                    tools:layout_editor_absoluteY="254dp" />
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.818"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/contraseña"
+                    app:layout_constraintVertical_bias="0.0" />
 
                 <Button
                     android:id="@+id/boton_iniciarSesion"
@@ -123,6 +128,19 @@
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent" />
+
+                <ImageButton
+                    android:id="@+id/x1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/white"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0"
+                    app:srcCompat="@android:drawable/ic_menu_close_clear_cancel" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
