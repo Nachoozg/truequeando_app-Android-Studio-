@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backColor"
+    android:backgroundTint="@color/backColor">
+
+    <ImageView
+        android:id="@+id/imagenanuncio"
+        android:layout_width="479dp"
+        android:layout_height="365dp"
+        android:layout_marginBottom="366dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/zapas" />
+
+    <TextView
+        android:id="@+id/precio"
+        android:layout_width="168dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginBottom="268dp"
+        android:text="34,50€"
+        android:textColor="@color/black"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.065"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imagenanuncio"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tituloproducto"
+        android:layout_width="385dp"
+        android:layout_height="65dp"
+        android:text="Zapatillas de running marca Adidas T.42 no estrenadas."
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.615"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/precio"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/perfilvendedor"
+        android:layout_width="83dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="16dp"
+        android:backgroundTint="@color/backColor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.421"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tituloproducto"
+        app:layout_constraintVertical_bias="0.195"
+        app:srcCompat="@drawable/perfil" />
+
+    <ImageView
+        android:id="@+id/stats"
+        android:layout_width="100dp"
+        android:layout_height="31dp"
+        android:layout_marginBottom="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/perfilvendedor"
+        app:srcCompat="@drawable/stats" />
+
+    <TextView
+        android:id="@+id/nombrevendedora"
+        android:layout_width="169dp"
+        android:layout_height="25dp"
+        android:text="María del Carmen "
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/estrellas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.438"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tituloproducto"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/estrellas"
+        android:layout_width="118dp"
+        android:layout_height="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/stats"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/perfilvendedor"
+        app:srcCompat="@drawable/estrellas" />
+
+    <Button
+        android:id="@+id/botoncomprar"
+        android:layout_width="197dp"
+        android:layout_height="45dp"
+        android:backgroundTint="@color/DarkBlue"
+        android:text="Comprar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stats"
+        app:layout_constraintVertical_bias="0.709" />
+
+    <ImageButton
+        android:id="@+id/flechaAtras"
+        android:layout_width="54dp"
+        android:layout_height="49dp"
+        android:backgroundTint="#00FFFFFF"
+        app:srcCompat="?attr/homeAsUpIndicator"
+        app:tint="#FFFFFF"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-1dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="45dp"
+        android:layout_height="40dp"
+        app:srcCompat="@drawable/trespuntosproducto"
+        tools:layout_editor_absoluteX="350dp"
+        tools:layout_editor_absoluteY="325dp"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/imageButton12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/backColor"
+        app:layout_constraintBottom_toTopOf="@+id/botoncomprar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.716"
+        app:layout_constraintStart_toEndOf="@+id/estrellas"
+        app:layout_constraintTop_toBottomOf="@+id/tituloproducto"
+        app:layout_constraintVertical_bias="0.426"
+        app:srcCompat="@drawable/abrirchat" />
+
+    <View
+        android:id="@+id/divider5"
+        android:layout_width="375dp"
+        android:layout_height="2dp"
+        android:background="@color/DarkBlue"
+        app:layout_constraintBottom_toTopOf="@+id/nombrevendedora"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tituloproducto" />
+
+    <View
+        android:id="@+id/divider6"
+        android:layout_width="375dp"
+        android:layout_height="2dp"
+        android:background="@color/DarkBlue"
+        app:layout_constraintBottom_toTopOf="@+id/botoncomprar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stats"
+        app:layout_constraintVertical_bias="0.297" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
