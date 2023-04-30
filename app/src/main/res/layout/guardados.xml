@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backColor"
+    android:backgroundTint="@color/backColor">
+
+
+    <TextView
+        android:id="@+id/guardad_s"
+        android:layout_width="193dp"
+        android:layout_height="60dp"
+        android:text="Guardad  s"
+        android:textColor="@color/DarkBlue"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.091"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.035" />
+
+    <ImageView
+        android:id="@+id/guardadoTitulo"
+        android:layout_width="33dp"
+        android:layout_height="36dp"
+        app:layout_constraintBottom_toBottomOf="@+id/guardad_s"
+        app:layout_constraintEnd_toEndOf="@+id/guardad_s"
+        app:layout_constraintHorizontal_bias="0.906"
+        app:layout_constraintStart_toStartOf="@+id/guardad_s"
+        app:layout_constraintTop_toTopOf="@+id/guardad_s"
+        app:layout_constraintVertical_bias="0.625"
+        app:srcCompat="@drawable/guardar" />
+
+    <ImageView
+        android:id="@+id/cochemalo"
+        android:layout_width="154dp"
+        android:layout_height="193dp"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.237"
+        app:srcCompat="@drawable/cochemalo" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="154dp"
+        android:layout_height="193dp"
+        android:layout_marginEnd="264dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.226"
+        app:srcCompat="@drawable/dunk" />
+
+    <View
+        android:id="@+id/divider8"
+        android:layout_width="409dp"
+        android:layout_height="1dp"
+        android:background="@color/DarkBlue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.138" />
+
+    <ImageView
+        android:id="@+id/guardados"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/home1"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lineadivisoria"
+        app:srcCompat="@drawable/guardar" />
+
+    <ImageView
+        android:id="@+id/home1"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="92dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/chat1"
+        app:layout_constraintTop_toTopOf="@+id/lineadivisoria"
+        app:srcCompat="@drawable/home" />
+
+    <ImageView
+        android:id="@+id/chat1"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="44dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lineadivisoria"
+        app:srcCompat="@drawable/chat" />
+
+    <View
+        android:id="@+id/lineadivisoria"
+        android:layout_width="409dp"
+        android:layout_height="2dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.913" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
