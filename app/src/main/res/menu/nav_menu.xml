@@ -8,35 +8,29 @@
         android:checkableBehavior="single">
 
         <item
-            android:id="@+id/nav_home"
-            android:icon="@drawable/baseline_home_24"
-            android:title="Home"/>
-
-        <item
             android:id="@+id/nav_settings"
             android:icon="@drawable/baseline_settings_24"
-            android:title="Settings"/>
+            android:title="AJUSTES"/>
 
         <item
-            android:id="@+id/nav_share"
-            android:icon="@drawable/baseline_share_24"
-            android:title="Share"/>
+            android:id="@+id/nav_subscribers"
+            android:icon="@drawable/baseline_stars_24"
+            android:title="UNIRSE A SUSCRIPTORES"/>
 
         <item
-            android:id="@+id/nav_about"
-            android:icon="@drawable/baseline_info_24"
-            android:title="About Us"/>
+            android:id="@+id/nav_technical_service"
+            android:icon="@drawable/baseline_people_alt_24"
+            android:title="SERVICIO TÉCNICO"/>
+
+        <item
+            android:id="@+id/administrator_functions"
+            android:icon="@drawable/baseline_admin_panel_settings_24"
+            android:title="FUNCIONES ADMINISTRADOR"/>
+
+        <item
+            android:id="@+id/payment_method"
+            android:icon="@drawable/baseline_credit_card_24"
+            android:title="MÉTODO DE PAGO"/>
     </group>
-    <item
-        android:title="">
-
-        <menu>
-            <item
-                android:id="@+id/nav_logout"
-                android:icon="@drawable/baseline_exit_to_app_24"
-                android:title="Logout"/>
-        </menu>
-
-    </item>
 
 </menu>
