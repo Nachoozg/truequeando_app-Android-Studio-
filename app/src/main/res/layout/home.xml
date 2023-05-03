@@ -249,5 +249,71 @@
         app:layout_constraintStart_toEndOf="@+id/menu"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <ImageButton
+        android:id="@+id/guardados1"
+        android:layout_width="30dp"
+        android:layout_height="29dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="28dp"
+        android:backgroundTint="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/coche1"
+        app:layout_constraintEnd_toEndOf="@+id/zapatillas1"
+        app:srcCompat="@drawable/guardados" />
+
+    <ImageButton
+        android:id="@+id/guardados2"
+        android:layout_width="30dp"
+        android:layout_height="29dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="28dp"
+        android:backgroundTint="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/gorra"
+        app:layout_constraintEnd_toEndOf="@+id/iphone"
+        app:srcCompat="@drawable/guardados" />
+
+    <ImageButton
+        android:id="@+id/guardado_rell1"
+        android:layout_width="29dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="112dp"
+        android:layout_marginBottom="28dp"
+        android:backgroundTint="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/coche2"
+        app:layout_constraintStart_toEndOf="@+id/guardados2"
+        app:srcCompat="@drawable/guardados_relleno" />
+
+    <ImageButton
+        android:id="@+id/guardado_rell2"
+        android:layout_width="29dp"
+        android:layout_height="26dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/coche3"
+        app:layout_constraintEnd_toEndOf="@+id/coche1"
+        app:srcCompat="@drawable/guardados_relleno" />
+
+    <ImageButton
+        android:id="@+id/guardados3"
+        android:layout_width="30dp"
+        android:layout_height="29dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/plei"
+        app:layout_constraintEnd_toEndOf="@+id/gorra"
+        app:srcCompat="@drawable/guardados" />
+
+    <ImageButton
+        android:id="@+id/guardados4"
+        android:layout_width="30dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="108dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/portatil"
+        app:layout_constraintStart_toEndOf="@+id/guardados3"
+        app:srcCompat="@drawable/guardados" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
 
