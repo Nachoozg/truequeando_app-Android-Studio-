@@ -56,5 +56,16 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        ImageButton adminButton = findViewById(R.id.llave);
+
+        adminButton.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, LoginAdminActivity.class);
+                startActivity(intent);
+            }
+        });
+
     }
 }

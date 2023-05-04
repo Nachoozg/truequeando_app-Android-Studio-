@@ -36,6 +36,12 @@
         <activity android:name=".MenuActivity"
             android:launchMode="singleTask">
         </activity>
+        <activity android:name=".LoginAdminActivity">
+            <!-- Otras opciones de configuración para la actividad -->
+        </activity>
+        <activity android:name=".HomeAdminActivity">
+            <!-- Otras opciones de configuración para la actividad -->
+        </activity>
     </application>
 
 </manifest>
