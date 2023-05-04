@@ -54,6 +54,33 @@
         <activity android:name=".SubirAnuncioActivity">
             <!-- Otras opciones de configuración para la actividad -->
         </activity>
+        <activity android:name=".PerfilActivity">
+            <!-- Otras opciones de configuración para la actividad -->
+        </activity>
+        <activity android:name=".ModificarPerfilActivity">
+            <!-- Otras opciones de configuración para la actividad -->
+        </activity>
+        <activity android:name=".ServivioTecnicoActivity">
+            <!-- Otras opciones de configuración para la actividad -->
+        </activity>
+        <activity android:name=".SuscripcionActivity">
+            <!-- Otras opciones de configuración para la actividad -->
+        </activity>
+        <activity android:name=".ChatServicioTecnicoActivity">
+            <!-- Otras opciones de configuración para la actividad -->
+        </activity>
+        <activity android:name=".PagoSuscripActivity">
+            <!-- Otras opciones de configuración para la actividad -->
+        </activity>
+        <activity android:name=".GuardadosActivity">
+            <!-- Otras opciones de configuración para la actividad -->
+        </activity>
+        <activity android:name=".MensajesActivity">
+            <!-- Otras opciones de configuración para la actividad -->
+        </activity>
+        <activity android:name=".ChatActivity">
+            <!-- Otras opciones de configuración para la actividad -->
+        </activity>
     </application>
 
 </manifest>

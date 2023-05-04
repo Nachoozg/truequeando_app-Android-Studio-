@@ -3,33 +3,33 @@ package com.example.prueba1;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class SubirAnuncioActivity extends AppCompatActivity {
+public class GuardadosActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.subiranuncio);
+        setContentView(R.layout.guardados);
 
-        ImageView Atras = findViewById(R.id.flechaatrasproducto);
-        Atras.setOnClickListener(new View.OnClickListener() {
+        ImageView home = findViewById(R.id.home1);
+        home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(SubirAnuncioActivity.this, HomeActivity.class);
+                Intent intent = new Intent(GuardadosActivity.this, HomeActivity.class);
                 startActivity(intent);
             }
         });
 
-        Button Guardar = findViewById(R.id.botonguardaranuncio);
-        Guardar.setOnClickListener(new View.OnClickListener() {
+        ImageView chat = findViewById(R.id.chat1);
+        chat.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(SubirAnuncioActivity.this, HomeActivity.class);
+                Intent intent = new Intent(GuardadosActivity.this, ChatActivity.class);
                 startActivity(intent);
             }
         });
     }
+
 }

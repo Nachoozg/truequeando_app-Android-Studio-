@@ -114,5 +114,32 @@ public class HomeActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        ImageView Perfil = findViewById(R.id.perro);
+        Perfil.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(HomeActivity.this, PerfilActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        ImageView Guardados = findViewById(R.id.guardados);
+        Guardados.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(HomeActivity.this, GuardadosActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        ImageView Mensajes = findViewById(R.id.chat1);
+        Mensajes.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(HomeActivity.this, ChatActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }

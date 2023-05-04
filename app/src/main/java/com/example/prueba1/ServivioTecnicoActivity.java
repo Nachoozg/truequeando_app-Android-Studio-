@@ -8,28 +8,29 @@ import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class SubirAnuncioActivity extends AppCompatActivity {
+public class ServivioTecnicoActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.subiranuncio);
+        setContentView(R.layout.servicio_tecnico);
 
-        ImageView Atras = findViewById(R.id.flechaatrasproducto);
+        ImageView Atras = findViewById(R.id.flechaatrasserviciotecnico);
         Atras.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(SubirAnuncioActivity.this, HomeActivity.class);
+                Intent intent = new Intent(ServivioTecnicoActivity.this, PerfilActivity.class);
                 startActivity(intent);
             }
         });
 
-        Button Guardar = findViewById(R.id.botonguardaranuncio);
-        Guardar.setOnClickListener(new View.OnClickListener() {
+        Button AbrirChat = findViewById(R.id.botonabrirchat);
+        AbrirChat.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(SubirAnuncioActivity.this, HomeActivity.class);
+                Intent intent = new Intent(ServivioTecnicoActivity.this, ChatServicioTecnicoActivity.class);
                 startActivity(intent);
             }
         });
+
     }
 }

@@ -35,30 +35,30 @@
 
     <TextView
         android:id="@+id/titulo"
-        android:layout_width="266dp"
-        android:layout_height="22dp"
+        android:layout_width="309dp"
+        android:layout_height="31dp"
         android:text="Zapatillas de running marc..."
         android:textColor="@color/black"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintHorizontal_bias="0.862"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.174" />
+        app:layout_constraintVertical_bias="0.175" />
 
     <TextView
         android:id="@+id/mensajeVP"
-        android:layout_width="261dp"
-        android:layout_height="20dp"
+        android:layout_width="287dp"
+        android:layout_height="21dp"
         android:text="Si!, como quieres realizar..."
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintHorizontal_bias="0.741"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/titulo"
-        app:layout_constraintVertical_bias="0.003" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <View
         android:id="@+id/divider"
@@ -95,13 +95,12 @@
         android:id="@+id/perfil"
         android:layout_width="51dp"
         android:layout_height="45dp"
-        android:layout_marginTop="40dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.044"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/chats"
-        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.179"
         app:srcCompat="@drawable/perfil" />
 
     <ImageView
