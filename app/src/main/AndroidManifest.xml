@@ -33,6 +33,9 @@
         <activity android:name=".HomeActivity">
             <!-- Otras opciones de configuración para la actividad -->
         </activity>
+        <activity android:name=".MenuActivity"
+            android:launchMode="singleTask">
+        </activity>
     </application>
 
 </manifest>

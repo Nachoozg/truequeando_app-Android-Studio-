@@ -19,7 +19,7 @@
         app:srcCompat="@drawable/perro" />
 
     <ImageButton
-        android:id="@+id/menu"
+        android:id="@+id/menu_desplegable"
         android:layout_width="78dp"
         android:layout_height="75dp"
         android:layout_marginTop="4dp"
@@ -246,7 +246,6 @@
         android:ems="10"
         android:inputType="text"
         android:text="Buscar"
-        app:layout_constraintStart_toEndOf="@+id/menu"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
