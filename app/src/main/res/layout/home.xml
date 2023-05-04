@@ -348,7 +348,7 @@
         app:srcCompat="@drawable/guardados" />
 
     <ImageView
-        android:id="@+id/imageView7"
+        android:id="@+id/flechaatrasserviciotecnico"
         android:layout_width="66dp"
         android:layout_height="62dp"
         app:layout_constraintBottom_toBottomOf="parent"
