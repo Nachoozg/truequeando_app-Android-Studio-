@@ -30,22 +30,23 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="50dp"
-        android:layout_marginTop="40dp"
         android:layout_marginEnd="50dp"
         android:paddingTop="40dp"
         android:text="Administrador"
         android:textAlignment="center"
         android:textColor="@color/DarkBlue"
         android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.079" />
 
     <Button
         android:id="@+id/reportar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="273dp"
+        android:layout_height="56dp"
         android:backgroundTint="@color/DarkBlue"
         android:padding="10dp"
         android:paddingLeft="26dp"
@@ -55,13 +56,17 @@
         android:textColor="@color/backColor"
         app:iconPadding="8dp"
         app:iconTint="@color/backColor"
-        tools:layout_editor_absoluteX="99dp"
-        tools:layout_editor_absoluteY="146dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.717"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.234" />
 
     <Button
         android:id="@+id/elim"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="273dp"
+        android:layout_height="57dp"
         android:backgroundTint="@color/DarkBlue"
         android:padding="10dp"
         android:paddingLeft="26dp"
@@ -71,8 +76,12 @@
         android:textColor="@color/backColor"
         app:iconPadding="8dp"
         app:iconTint="@color/backColor"
-        tools:layout_editor_absoluteX="99dp"
-        tools:layout_editor_absoluteY="217dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.717"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.353" />
 
     <Button
         android:id="@+id/nuevas"
@@ -87,8 +96,12 @@
         android:textColor="@color/backColor"
         app:iconPadding="24dp"
         app:iconTint="@color/backColor"
-        tools:layout_editor_absoluteX="99dp"
-        tools:layout_editor_absoluteY="284dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.702"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.477" />
 
     <Button
         android:id="@+id/cerrar_sesion"
@@ -103,38 +116,53 @@
         android:textColor="@color/backColor"
         app:iconPadding="8dp"
         app:iconTint="@color/backColor"
-        tools:layout_editor_absoluteX="135dp"
-        tools:layout_editor_absoluteY="664dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.901" />
 
     <ImageButton
         android:id="@+id/imageButton2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/backColor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.114"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.36"
         app:srcCompat="@drawable/camara"
-        app:tint="@color/DarkBlue"
-        tools:layout_editor_absoluteX="41dp"
-        tools:layout_editor_absoluteY="217dp" />
+        app:tint="@color/DarkBlue" />
 
     <ImageButton
         android:id="@+id/imageButton3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/backColor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.114"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.241"
         app:srcCompat="@drawable/contacto"
-        app:tint="@color/DarkBlue"
-        tools:layout_editor_absoluteX="41dp"
-        tools:layout_editor_absoluteY="148dp" />
+        app:tint="@color/DarkBlue" />
 
     <ImageButton
         android:id="@+id/imageButton7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/backColor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.116"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.47"
         app:srcCompat="@drawable/libro"
-        app:tint="@color/DarkBlue"
-        tools:layout_editor_absoluteX="41dp"
-        tools:layout_editor_absoluteY="284dp" />
+        app:tint="@color/DarkBlue" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
