@@ -13,7 +13,7 @@ public class LoginAdminActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login_admin);
 
-        Button IniciarSesionAdminButton = findViewById(R.id.boton_iniciarSesion);
+        Button IniciarSesionAdminButton = findViewById(R.id.guardarMetodoCompra);
         IniciarSesionAdminButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

@@ -42,6 +42,18 @@
         <activity android:name=".HomeAdminActivity">
             <!-- Otras opciones de configuración para la actividad -->
         </activity>
+        <activity android:name=".ProductoActivity">
+            <!-- Otras opciones de configuración para la actividad -->
+        </activity>
+        <activity android:name=".EleccionMetodoCompraActivity">
+            <!-- Otras opciones de configuración para la actividad -->
+        </activity>
+        <activity android:name=".PagoOnlineActivity">
+            <!-- Otras opciones de configuración para la actividad -->
+        </activity>
+        <activity android:name=".SubirAnuncioActivity">
+            <!-- Otras opciones de configuración para la actividad -->
+        </activity>
     </application>
 
 </manifest>

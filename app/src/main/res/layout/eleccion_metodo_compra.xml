@@ -38,7 +38,7 @@
 
 
                 <Button
-                    android:id="@+id/boton_iniciarSesion"
+                    android:id="@+id/guardarMetodoCompra"
                     android:layout_width="186dp"
                     android:layout_height="49dp"
                     android:layout_marginBottom="32dp"
