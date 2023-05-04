@@ -12,13 +12,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="top|left">
-
-        <ImageButton
-            android:id="@+id/close_drawer_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/baseline_clear_24"
-            />
     </LinearLayout>
 
     <ImageView
