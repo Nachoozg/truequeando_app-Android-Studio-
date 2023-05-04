@@ -34,6 +34,7 @@
         app:layout_constraintVertical_bias="0.625"
         app:srcCompat="@drawable/guardar" />
 
+
     <ImageView
         android:id="@+id/cochemalo"
         android:layout_width="154dp"
@@ -109,6 +110,31 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.913" />
+
+    <ImageView
+        android:id="@+id/guardadosguardado1"
+        android:layout_width="21dp"
+        android:layout_height="19dp"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView9"
+        app:layout_constraintEnd_toStartOf="@+id/cochemalo"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/imageView9"
+        app:layout_constraintTop_toTopOf="@+id/imageView9"
+        app:layout_constraintVertical_bias="0.954"
+        app:srcCompat="@drawable/guardados_relleno" />
+
+    <ImageView
+        android:id="@+id/guardadosguardado2"
+        android:layout_width="21dp"
+        android:layout_height="19dp"
+        app:layout_constraintBottom_toBottomOf="@+id/cochemalo"
+        app:layout_constraintEnd_toEndOf="@+id/cochemalo"
+        app:layout_constraintHorizontal_bias="0.805"
+        app:layout_constraintStart_toEndOf="@+id/imageView9"
+        app:layout_constraintTop_toTopOf="@+id/cochemalo"
+        app:layout_constraintVertical_bias="0.954"
+        app:srcCompat="@drawable/guardados_relleno" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
