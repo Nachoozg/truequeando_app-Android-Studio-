@@ -48,7 +48,7 @@
                 app:layout_constraintVertical_bias="0.004" />
 
             <ImageButton
-                android:id="@+id/x1"
+                android:id="@+id/exit_register"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:backgroundTint="@color/white"

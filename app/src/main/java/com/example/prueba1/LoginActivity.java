@@ -8,30 +8,30 @@ import android.widget.ImageButton;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class RegisterActivity extends AppCompatActivity {
+public class LoginActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.registro);
+        setContentView(R.layout.login);
 
-        Button crearCuentaButton = findViewById(R.id.boton_crear_cuenta);
-        crearCuentaButton.setOnClickListener(new View.OnClickListener() {
+        Button IniciarSesionButton = findViewById(R.id.boton_iniciar_sesion);
+        IniciarSesionButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(RegisterActivity.this, HomeActivity.class);
+                Intent intent = new Intent(LoginActivity.this, HomeActivity.class);
                 startActivity(intent);
             }
         });
 
-        ImageButton cerrarFormularioCrearCuenta = findViewById(R.id.exit_register);
+        ImageButton cerrarFormularioIniciarSesion = findViewById(R.id.exit_login);
 
-        cerrarFormularioCrearCuenta.setOnClickListener(new View.OnClickListener(){
+        cerrarFormularioIniciarSesion.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(RegisterActivity.this, MainActivity.class);
+                Intent intent = new Intent(LoginActivity.this, MainActivity.class);
                 startActivity(intent);
             }
         });
+
     }
 }
-
