@@ -11,6 +11,7 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 import android.app.Dialog;
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
@@ -19,6 +20,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.Window;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -35,44 +37,23 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.index);
 
-        drawerLayout = findViewById(R.id.drawer_layout);
-
-        NavigationView navigationView = findViewById(R.id.nav_view);
-        navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
+        Button comenzarAVenderButton = findViewById(R.id.comenzar_vender);
+        comenzarAVenderButton.setOnClickListener(new View.OnClickListener() {
             @Override
-            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                // Maneja los clics en los elementos del menú desplegable
-                switch (item.getItemId()) {
-                    case R.id.nav_settings:
-                        // Abre la actividad de ajustes
-                        break;
-                    case R.id.nav_subscribers:
-                        // Abre la actividad para unirse a suscriptores
-                        break;
-                    case R.id.nav_technical_service:
-                        // Abre la actividad de servicio técnico
-                        break;
-                    case R.id.administrator_functions:
-                        // Abre la actividad de funciones administrador
-                        break;
-                    case R.id.payment_method:
-                        // Abre la actividad de método de pago
-                        break;
-                }
-
-                drawerLayout.closeDrawer(GravityCompat.START);
-                return true;
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, RegisterActivity.class);
+                startActivity(intent);
             }
         });
 
-        ImageButton closeDrawerButton = navigationView.getHeaderView(0).findViewById(R.id.close_drawer_button);
-        closeDrawerButton.setOnClickListener(new View.OnClickListener() {
+        Button yaSoyUsuarioButton = findViewById(R.id.ya_usuario);
+        yaSoyUsuarioButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Cierra el menú desplegable cuando se hace clic en el botón para cerrar
-                drawerLayout.closeDrawer(GravityCompat.START);
+                Intent intent = new Intent(MainActivity.this, LoginActivity.class);
+                startActivity(intent);
             }
         });
     }

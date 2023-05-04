@@ -33,8 +33,12 @@
         android:textColor="@color/backColor"
         app:iconPadding="8dp"
         app:iconTint="@color/backColor"
-        tools:layout_editor_absoluteX="112dp"
-        tools:layout_editor_absoluteY="480dp" />
+        app:layout_constraintBottom_toTopOf="@+id/ya_usuario"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
     <Button
         android:id="@+id/ya_usuario"
@@ -49,8 +53,12 @@
         android:textColor="@color/backColor"
         app:iconPadding="24dp"
         app:iconTint="@color/backColor"
-        tools:layout_editor_absoluteX="111dp"
-        tools:layout_editor_absoluteY="531dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.513"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.755" />
 
     <ImageButton
         android:id="@+id/llave"
