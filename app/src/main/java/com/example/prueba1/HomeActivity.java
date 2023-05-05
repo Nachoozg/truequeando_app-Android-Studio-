@@ -2,19 +2,31 @@ package com.example.prueba1;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
+import com.google.android.material.navigation.NavigationView;
+
 public class HomeActivity extends AppCompatActivity {
+
+    NavigationView navigationView;
+    DrawerLayout drawerLayout;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.home_test);
+
+        navigationView = findViewById(R.id.nav_view);
+        drawerLayout = findViewById(R.id.drawer_layout);
 
         ImageButton abrirMenu = findViewById(R.id.menu_desplegable);
         abrirMenu.setOnClickListener(new View.OnClickListener() {
@@ -141,5 +153,41 @@ public class HomeActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                Intent intent;
+                switch (item.getItemId()) {
+                    case R.id.nav_settings:
+                        intent = new Intent(HomeActivity.this, PerfilActivity.class);
+                        startActivity(intent);
+                        break;
+                    case R.id.nav_subscribers:
+                        intent = new Intent(HomeActivity.this, SuscripcionActivity.class);
+                        startActivity(intent);
+                        break;
+                    case R.id.nav_technical_service:
+                        intent = new Intent(HomeActivity.this, ServivioTecnicoActivity.class);
+                        startActivity(intent);
+                        break;
+                    case R.id.administrator_functions:
+                        intent = new Intent(HomeActivity.this, HomeAdminActivity.class);
+                        startActivity(intent);
+                        break;
+                    case R.id.payment_method:
+                        intent = new Intent(HomeActivity.this, IngresarDatosBancariosActivity.class);
+                        startActivity(intent);
+                        break;
+                    case R.id.nav_logout:
+                        intent = new Intent(HomeActivity.this, MainActivity.class);
+                        startActivity(intent);
+                        break;
+                }
+                drawerLayout.closeDrawer(GravityCompat.START);
+                return true;
+            }
+        });
+
     }
 }

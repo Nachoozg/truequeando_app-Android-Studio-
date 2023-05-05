@@ -81,6 +81,9 @@
         <activity android:name=".ChatActivity">
             <!-- Otras opciones de configuración para la actividad -->
         </activity>
+        <activity android:name=".IngresarDatosBancariosActivity">
+            <!-- Otras opciones de configuración para la actividad -->
+        </activity>
     </application>
 
 </manifest>
