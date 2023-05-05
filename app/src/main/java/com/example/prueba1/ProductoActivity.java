@@ -14,7 +14,7 @@ public class ProductoActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.product);
 
-        Button Comprar = findViewById(R.id.botoncomprar);
+        Button Comprar = findViewById(R.id.botonguardar);
         Comprar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

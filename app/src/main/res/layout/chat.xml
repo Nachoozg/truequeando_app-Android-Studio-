@@ -141,10 +141,11 @@
         android:layout_width="45dp"
         android:layout_height="45dp"
         android:layout_marginEnd="44dp"
+        android:background="@color/backColor"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/lineadivisoria"
-        app:srcCompat="@drawable/chat" />
+        app:srcCompat="@drawable/chatblanco" />
 
     <View
         android:id="@+id/lineadivisoria"

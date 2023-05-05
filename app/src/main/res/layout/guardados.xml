@@ -79,7 +79,7 @@
         app:layout_constraintHorizontal_bias="0.333"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/lineadivisoria"
-        app:srcCompat="@drawable/guardar" />
+        app:srcCompat="@drawable/guardadosblanco" />
 
     <ImageView
         android:id="@+id/home1"

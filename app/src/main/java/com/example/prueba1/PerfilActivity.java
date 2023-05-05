@@ -3,6 +3,7 @@ package com.example.prueba1;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -57,6 +58,15 @@ public class PerfilActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(PerfilActivity.this, ServivioTecnicoActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        Button Productos = findViewById(R.id.productos);
+        Productos.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(PerfilActivity.this, EnVentaActivity.class);
                 startActivity(intent);
             }
         });

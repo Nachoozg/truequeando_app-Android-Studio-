@@ -93,6 +93,18 @@
         <activity android:name=".ChatDesdeProductoActivity">
             <!-- Otras opciones de configuración para la actividad -->
         </activity>
+        <activity android:name=".EnVentaActivity">
+            <!-- Otras opciones de configuración para la actividad -->
+        </activity>
+        <activity android:name=".ModificarVentaActivity">
+            <!-- Otras opciones de configuración para la actividad -->
+        </activity>
+        <activity android:name=".CancelarAceptarBorradoActivity">
+            <!-- Otras opciones de configuración para la actividad -->
+        </activity>
+        <activity android:name=".BorradoAceptadoActivity">
+            <!-- Otras opciones de configuración para la actividad -->
+        </activity>
     </application>
 
 </manifest>
