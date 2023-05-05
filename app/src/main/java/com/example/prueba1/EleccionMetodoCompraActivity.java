@@ -3,6 +3,7 @@ package com.example.prueba1;
         import android.os.Bundle;
         import android.view.View;
         import android.widget.Button;
+        import android.widget.ImageButton;
 
         import androidx.appcompat.app.AppCompatActivity;
 
@@ -18,6 +19,16 @@ public class EleccionMetodoCompraActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(EleccionMetodoCompraActivity.this, PagoOnlineActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        ImageButton Atras = findViewById(R.id.atras);
+        Atras.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(EleccionMetodoCompraActivity.this, ProductoActivity.class);
                 startActivity(intent);
             }
         });

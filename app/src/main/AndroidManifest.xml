@@ -84,6 +84,15 @@
         <activity android:name=".IngresarDatosBancariosActivity">
             <!-- Otras opciones de configuración para la actividad -->
         </activity>
+        <activity android:name=".CancelarAceptarCompraActivity">
+            <!-- Otras opciones de configuración para la actividad -->
+        </activity>
+        <activity android:name=".CompraAceptadaActivity">
+            <!-- Otras opciones de configuración para la actividad -->
+        </activity>
+        <activity android:name=".ChatDesdeProductoActivity">
+            <!-- Otras opciones de configuración para la actividad -->
+        </activity>
     </application>
 
 </manifest>
