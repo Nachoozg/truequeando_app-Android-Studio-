@@ -8,29 +8,19 @@ import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class PagoSuscripActivity extends AppCompatActivity {
+public class ChatDesdeProductoActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.pagosuscrip);
+        setContentView(R.layout.chatdesdeproducto);
 
         ImageView Volver = findViewById(R.id.imageView5);
         Volver.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(PagoSuscripActivity.this, SuscripcionActivity.class);
-                startActivity(intent);
-            }
-        });
-
-        Button Pagar = findViewById(R.id.button2);
-        Pagar.setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(PagoSuscripActivity.this, CancelarAceptarCompraActivity.class);
+                Intent intent = new Intent(ChatDesdeProductoActivity.this, ProductoActivity.class);
                 startActivity(intent);
             }
         });

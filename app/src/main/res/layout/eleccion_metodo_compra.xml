@@ -39,8 +39,8 @@
 
                 <Button
                     android:id="@+id/guardarMetodoCompra"
-                    android:layout_width="186dp"
-                    android:layout_height="49dp"
+                    android:layout_width="204dp"
+                    android:layout_height="65dp"
                     android:layout_marginBottom="32dp"
                     android:backgroundTint="@color/DarkBlue"
                     android:padding="10dp"
@@ -54,12 +54,13 @@
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/checkBox4" />
+                    app:layout_constraintTop_toBottomOf="@+id/checkBox4"
+                    app:layout_constraintVertical_bias="0.727" />
 
                 <ImageView
                     android:id="@+id/imageView5"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="37dp"
+                    android:layout_height="34dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/texto_Login"
@@ -69,25 +70,27 @@
                     android:id="@+id/checkBox3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Compra online (Envío por correo)"
+                    android:text="Compra online"
                     app:layout_constraintBottom_toTopOf="@+id/checkBox4"
                     app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.502"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+                    app:layout_constraintTop_toBottomOf="@+id/imageView5"
+                    app:layout_constraintVertical_bias="0.475" />
 
                 <CheckBox
                     android:id="@+id/checkBox4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="236dp"
-                    android:text="Compra física (Quedar con el vendedor)"
+                    android:layout_marginTop="232dp"
+                    android:text="Compra física"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.457"
+                    app:layout_constraintHorizontal_bias="0.502"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <ImageButton
-                    android:id="@+id/imageButton30"
+                    android:id="@+id/atras"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
 

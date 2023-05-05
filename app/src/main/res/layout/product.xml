@@ -19,6 +19,18 @@
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/zapas" />
 
+    <ImageView
+        android:id="@+id/chatMensaje12"
+        android:layout_width="52dp"
+        android:layout_height="54dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.908"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.834"
+        app:srcCompat="@drawable/chat" />
+
     <TextView
         android:id="@+id/precio"
         android:layout_width="168dp"
@@ -126,19 +138,6 @@
         app:layout_constraintVertical_bias="0.47"
         app:srcCompat="@drawable/trespuntosproducto"
         tools:ignore="MissingConstraints" />
-
-    <ImageButton
-        android:id="@+id/imageButton12"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@color/backColor"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.927"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.834"
-        app:srcCompat="@drawable/abrirchat" />
 
     <View
         android:id="@+id/divider5"
